@@ -38,6 +38,14 @@ h1,h2,h3,h4,h5,h6 {
 .site-content {
     padding-top:50px;
 }
+
+.tag-yellow{
+    background-color: rgb(227, 241, 64);
+}
+.tag-yellow:hover{
+    background-color: rgb(227, 241, 64) !important;
+}
+
 .sitetag {
     font-weight:700;    
     line-height:1.3;
