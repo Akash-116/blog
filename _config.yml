@@ -70,7 +70,17 @@ kramdown:
    syntax_highlighter_opts:
       disable : true
 
-
+# Jekyll-compose
+jekyll_compose:
+  # auto_open: true
+  default_front_matter:
+    posts:
+      author: akash
+      categories: [ ]
+      tags: []
+      image:
+      description:
+      rating : 
 
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"

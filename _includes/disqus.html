@@ -1,6 +1,29 @@
 <section class="disqus">
+    <!-- <h3> {{ page.title }} </h3> -->
+    <!-- <h3> {{ page.url }} </h3> -->
+    <!-- Use page.url as identifier -->
     <div id="disqus_thread"></div>
     <script type="text/javascript">
+        var disqus_config = function () {
+            /* These are configuration variables */
+            /* These are used to identify our blog's unique thread */
+            /* If these are NOT SET, then 
+            automatically complete url is used for identifier
+            Which would result in different comment threads when
+            1. Hosted on akash-116.github.io
+            2. Developing on localhost:4000
+            3. Live Server on localhost:5000
+            --------------------------------
+            Now after setting the identifier 
+            (which is expected to stay constant
+            for the life of the blog)
+            The comments thread will be the same every time
+            */
+
+            this.page.identifier = '{{ page.url }}'
+            this.page.title = '{{ page.title }}'
+        }
+
         var disqus_shortname = '{{site.disqus}}';
         var disqus_developer = 0;
         (function () {
