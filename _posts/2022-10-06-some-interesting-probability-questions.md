@@ -10,13 +10,19 @@ description:
 rating: 
 ---
 
-Line First
-<details>
-    <summary>Answer </summary>
+1. Line First
+   <details>
+       <summary>Answer </summary>
 
-    asdasd
-    asdasdasd
-</details>
+       SOlution to rist Question
+   </details>
+
+2. Line Second
+   <details>
+       <summary>Answer </summary>
+
+       Solution to second question
+   </details>
 
 
 Outside Details block
