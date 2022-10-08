@@ -3,8 +3,8 @@ layout: post
 title: Some Interesting Probability Questions
 date: 2022-10-06 20:59 +0530
 author: akash
-categories: [Questions]
-tags: [Probability]
+categories: [questions]
+tags: [probability]
 image: https://wallpaperaccess.com/full/6767058.jpg
 description: 
 rating: 
