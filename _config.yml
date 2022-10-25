@@ -75,6 +75,7 @@ jekyll_compose:
   # auto_open: true
   default_front_matter:
     posts:
+      # Use all small letters
       author: akash
       categories: [ ]
       tags: []

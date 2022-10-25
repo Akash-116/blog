@@ -5,18 +5,32 @@ permalink: "/tags.html"
 ---
 
 {% for tag in site.tags %}
-<h4 class="mt-5 mb-neg-30" id="{{ tag[0] | replace: " "," -" }}"><span
-        class="text-capitalize text-small tag-yellow badge badge-primary">{{ tag[0] }}</span></h4>
-<div class="blog-grid-container">
-    {% assign pages_list = tag[1] %}
-    {% for post in pages_list %}
-    {% if post.title != null %}
-    {% if group == null or group == post.group %}
-    {% include postbox.html %}
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% assign pages_list = nil %}
-    {% assign group = nil %}
+
+
+<div>
+
+    <h4 class="mt-5 mb-neg-30 collapse-btn" id="{{ tag[0] | replace: " "," -" }}">
+        <span class="text-capitalize text-small tag-yellow badge badge-primary">
+
+            <i class="fas fa-angle-down"></i>
+            {{ tag[0] }}
+
+        </span>
+    </h4>
+
+    <div class="collapse-content" id="entries-{{ tag[0] | replace: " "," -" }}">
+        <div class="blog-grid-container">
+            {% assign pages_list = tag[1] %}
+            {% for post in pages_list %}
+            {% if post.title != null %}
+            {% if group == null or group == post.group %}
+            {% include postbox.html %}
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+            {% assign pages_list = nil %}
+            {% assign group = nil %}
+        </div>
+    </div>
 </div>
 {% endfor %}
